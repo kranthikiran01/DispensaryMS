@@ -1,5 +1,5 @@
 <div id="footer">
-   <a href="http://localhost/DispensaryMS/">NITW DispensaryMS</a> 
+   <a href="<?=base_url();?>">NITW DispensaryMS</a> 
  </div><!-- <div class="footer">-->
  </div><!--<div id="wrapper">-->
 </body>

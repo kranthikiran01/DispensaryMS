@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>SignUp Page</title>
+	<title><?= $title?></title>
 	<link rel="stylesheet" href="<?php echo base_url().'assets/css/signup.css'; ?>">
-	<link href="<?php echo base_url().'assets/css/bootstrap.css'; ?>" rel="stylesheet">
+  <link href="<?php echo base_url().'assets/css/bootstrap.css'; ?>" rel="stylesheet">
+  <link rel="stylesheet" href="<?php echo base_url().'assets/css/style.css'; ?>">
 
 </head>
 <body>
@@ -12,12 +13,10 @@
     <?php echo form_open('Signup/signup'); ?>
 	<div class="signup-page">
 		<div class="header-section">
-			<a href="#"><img src="assets/images/loginlogo.png" alt=""></a>
+			<a href="#"><img src="<?php echo base_url().'assets/images/loginlogo.png';?>" alt=""></a>
 			<ul class="menu">
-<!--
 				<li><a href="index.html">Home</a></li>
 				<li><a href="register.html">Sign up</a></li>
--->
 			</ul>
 		</div><!--end of header -section-->
 	
@@ -109,13 +108,13 @@
                   <div class="form-group">
                       <label for="dateofBirth" class="col-lg-2 col-lg-offset-1 control-label">Date Of Birth</label>
                       <div class="col-lg-3">
-                      <input type="date" class="form-control" name="dateofbirth"  placeholder="dd/mm/yyyy">
+                      <input type="date" class="form-control" name="dateofbirth"  placeholder="DD/MM/YYYY">
                     </div>
                   </div>
                   <div class="form-group">
                       <label for="phoneNumber" class="col-lg-2 col-lg-offset-1 control-label">Phone Number</label>
                       <div class="col-lg-4">
-                      <input type='tel' pattern='[\+]\d{2}[\-]\d{10}'  required  class="form-control" name="phno" placeholder="Phone/mobile Number(Format: +91-9999999999)">
+                      <input type='tel' pattern='[\+]\d{2}[\-]\d{10}'  required  class="form-control" name="phno" placeholder="Mobile Number (Format: +91-1234567890)">
                     </div>
                   </div>
                   <div class="form-group">

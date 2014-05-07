@@ -3,6 +3,7 @@ body{
 	overflow-y: scroll;
 }
 .signup-page{
+
 min-height: 700px;
 background-image: url(../images/nit.jpg);
 background-size: cover;
@@ -10,4 +11,147 @@ background-size: cover;
 }
 .signup-page>legend>h1{
 	text-align: center;	
+}
+.signup-page .header-section {
+  min-height: 60px;
+  padding: 10px 80px;
+}
+.signup-page .header-section img {
+  height: 30px;
+}
+.signup-page .header-section .menu {
+  float: right;
+}
+.signup-page .header-section .menu > li {
+  list-style: none;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0px 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.signup-page .header-section .menu > li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #294e68;
+}
+.signup-page .header-section .menu > li a:hover {
+  color: #40647d;
+}
+.signup-page .form-section {
+  min-height: 500px;
+  background: url("../images/nit.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signup-page .form-section .form-inputs {
+  float: right;
+  margin-top: 200px;
+}
+.signup-page .form-section .form-inputs h4 {
+  color: #a9eeff;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+}
+.signup-page .form-section .form-inputs .input-group {
+  width: 300px;
+  margin-bottom: 30px;
+}
+.signup-page .form-section .form-inputs .input-group .form-control {
+  border-right: 0px !important;
+}
+.signup-page .form-section .form-inputs .input-group .form-control:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: none;
+}
+.signup-page .form-section .form-inputs .input-group .input-group-addon {
+  background: #ffffff;
+  border-left: none;
+}
+.signup-page .form-section .form-inputs .input-group .input-group-addon i {
+  color: #cfcfcf;
+}
+.signup-page .form-section .form-inputs .square-input {
+  margin-top: 10px;
+}
+.signup-page .form-section .form-inputs .check-text {
+  color: #b0deee;
+  font-family: 'Open Sans', sans-serif;
+}
+.signup-page .form-section .btn {
+  outline: none;
+  padding: 5px 40px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+.signup-page .form-section h5 {
+  text-align: center;
+  margin-top: 35px;
+}
+.signup-page .form-section h5 a {
+  color: #c4f3ff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.signup-page .footer {
+  min-height: 40px;
+  margin: 0px;
+  line-height: 40px;
+  padding: 0px 80px;
+}
+.signup-page .footer p {
+  margin: 0px;
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  color: #919191;
+}
+.signup-page .footer p > a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #676767;
+}
+.signup-page .footer ul li {
+  display: inline;
+  padding-left: 25px;
+}
+.signup-page .footer ul li a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #919191;
+}
+.signup-page .sign-in {
+  padding: 5px 20px;
+  border-radius: 4px;
+  border: 1px solid #294d67 !important;
+  font-family: 'Open Sans', sans-serif;
+}
+.signup-page .register-btn {
+  padding: 5px 20px !important;
+}
+@media (max-width: 480px) {
+  .signup-page .header-section {
+    padding: 10px 10px !important;
+    height: 80px;
+  }
+  .signup-page .header-section .menu {
+    float: right;
+  }
+  .signup-page .header-section .menu > li {
+    line-height: 0px !important;
+  }
+  .signup-page .form-section .form-inputs .input-group {
+    width: 250px;
+  }
+  .signup-page .footer {
+    padding: 10px 10px;
+  }
+  .signup-page .footer p {
+    line-height: 25px;
+  }
+  .signup-page .footer ul {
+    padding-left: 0px !important;
+  }
 }

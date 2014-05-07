@@ -3,7 +3,7 @@ class Signup extends CI_Controller{
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('user_model');
+		$this->load->model('Usersignup_model');
 	}
 	public function index()
 	{
@@ -13,7 +13,7 @@ class Signup extends CI_Controller{
 		}
 		else
 		{
-			$data['title']='Home';
+			$data['title']='Signup Page';
 			$this->load->view("signup_view.php",$data);
 			
 		}
@@ -24,14 +24,6 @@ class Signup extends CI_Controller{
 		$this->load->view('header_view',$data);
 		$this->load->view('welcome_view.php',$data);
 		$this->load->view('footer_view',$data);
-	}
-	public function login()
-	{
-		$regno=$this->$input->post('regno');
-		$pwd=md5($this->input->post('pwd'));
-		$result=$this->user_model->login($regno,$pwd);
-		if($result) $this->welcome();
-		else 		$this->index();
 	}
 	public function thank()
 	{
@@ -54,22 +46,9 @@ class Signup extends CI_Controller{
 		}		
 		else
 		{
-			$this->user_model->add_user();
+			$this->Usersignup_model->add_user();
 			$this->thank();
 		}
-	}
-	public function logout()
-	{
-		$newdata= array
-		( 
-		'user_regno'=>'',
-		'user_empid'=>'',
-		'user_type'=>'',
-		'logged_in'=>FALSE,
-		);
-		$this->session->unset_userdata($newdata);
-		$this->session->session_destroy();
-		$this->index();
 	}
 }
 ?>
